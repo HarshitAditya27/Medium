@@ -19,6 +19,7 @@ interface Props {
 
 function Post({ post }: Props) {
     const [submitted, setSubmitted] = useState(false)
+    console.log(post);
     const { register, handleSubmit, formState: { errors }, } = useForm<IFormInput>();
 
     const onSubmit: SubmitHandler<IFormInput> = async (data) => {
@@ -83,7 +84,7 @@ function Post({ post }: Props) {
         </article>
         <hr className="max-w-lg my-5 mx-auto border border-yellow-500" />
         {submitted ? (
-            <div className='max-w-lg my-5 mx-auto border border-yellow-500'>
+            <div className='flex flex-col py-10 my-10 bg-yellow-500 text-white max-w-2xl mx-auto'>
                 <h3 className="text-3xl font-bold">Thank you for submiting your comment</h3>
                 <p>Once it has been approved, it will appear below!</p>
             </div>
@@ -116,7 +117,7 @@ function Post({ post }: Props) {
                     <span className='text-gray-700'>Comment</span>
                     <textarea  {...register('comment', { required: true })} className='shadow border rounded py-2 px-3 form-textarea mt-1 block w-full ring-yellow-500 outline-none focus:ring' placeholder="Write your content" rows={8} />
                 </label>
-                <div>
+                <div className='flex flex-col p-5'>
                     {errors.name && (<span className='text-red-500'>Name is required</span>)}
                     {errors.comment && (<span className='text-red-500'>The comment field is required</span>)}
                     {errors.email && (<span className='text-red-500'>email is required</span>)}
@@ -135,8 +136,11 @@ function Post({ post }: Props) {
             <h3 className='text-4xl'>Comments</h3>
             <hr className='pb-2' />
             {post.comments.map((comment) => (
-                <div>
-                    <p><span className='text-yellow-500'> {comment.name}:</span>{comment.comment}</p>
+                <div key={comment._id}>
+                    <p>
+                        <span className='text-yellow-500'>{comment.name}: </span>
+                        {comment.comment}
+                    </p>
                 </div>
             ))}
         </div>

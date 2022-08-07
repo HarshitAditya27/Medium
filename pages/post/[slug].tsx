@@ -41,7 +41,7 @@ function Post({ post }: Props) {
         <img
             className='w-ful h-40 object-cover'
             src={urlFor(post.mainImage).url()!} alt="" />
-        <article className='max-w-3xl mx- auto p-5'>
+        <article className='max-w-3xl mx-auto p-5'>
             <h1 className='text-3xl mt-10 mb-3'>
                 {post.title}
             </h1>

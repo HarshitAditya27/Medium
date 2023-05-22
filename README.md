@@ -6,9 +6,9 @@ Deployed Link: https://medium-mocha-seven.vercel.app/
 
 ## Introduction 🐱‍💻
 
-Created a Medium clone using React and Next.js. I have used Sanity for backend functionalities such as posting a blog, creating the blog page and comment functionaly with allowance from the author. 
-<br>
-<a href="">**Sanity**</a>  is a Content Management System which can be used in executing many functionalities. It also makes the backend tasks easy and automated !. **I have wrote a blog where I have explained What is a CMS and how you can use Sanity in your projects which can be very helpful in reducing you backend tasks. You can ckeck my blog by clicking <a href="">here</a>**
+- Created a Medium clone using React and Next.js. I have used Sanity for backend functionalities such as posting a blog, creating the blog page and comment functionaly with allowance from the author. 
+
+- <a href="https://sanity.io/">**Sanity**</a>  is a Content Management System which can be used in executing many functionalities. It also makes the backend tasks easy and automated !. **I have wrote a blog where I have explained What is a CMS and how you can use Sanity in your projects which can be very helpful in reducing you backend tasks. You can ckeck my blog by clicking <a href="https://dev.to/harshitaditya1/understanding-cms-using-sanity-4of">here</a> 👈**
 ## Tech Stack used 👨‍💻
 <p align="left"> 
   <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a><a href="https://tailwindcss.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a><a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-3.svg" alt="nextjs" width="40" height="40"/> </a>  
@@ -63,7 +63,7 @@ npm run dev
   ```
  http://localhost:3000/
 ``` 
-  🚨 <a href="">**Sanity**</a> API keys are required before starting the application. We need to create a Sanity peoject to get access API keys. After Accessing the API keys we need to set up the .env file to use the API keys in the application and then start the application.
+  🚨 <a href="https://sanity.io/">**Sanity**</a> API keys are required before starting the application. We need to create a Sanity peoject to get access API keys. After Accessing the API keys we need to set up the .env file to use the API keys in the application and then start the application.
   
   ### Setup .env file
 
